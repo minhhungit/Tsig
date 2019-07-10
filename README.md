@@ -19,3 +19,8 @@ Twitter Snowflake-alike Id Generator
    <add key="IdGenMaskConfig" value="42,7,14"/>
 </appSettings>
 ```
+
+
+<img src="https://raw.githubusercontent.com/minhhungit/Tsig/master/wiki/demo01.png" />
+
+<img src="https://raw.githubusercontent.com/minhhungit/Tsig/master/wiki/demo02.png" />
