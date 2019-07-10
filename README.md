@@ -20,7 +20,14 @@ Twitter Snowflake-alike Id Generator
 </appSettings>
 ```
 
+### Run
+- Build and run TsigApp.exe 
+- Or host it as windows service by [topshelf](http://docs.topshelf-project.com/en/latest/overview/commandline.html) command: 
+  >TsigApp install --autostart
+- Send request to http://localhost:8111/tsig/gen/id with ApiKey
+- Receive Id 
 
+### Screenshot
 <img src="https://raw.githubusercontent.com/minhhungit/Tsig/master/wiki/demo01.png" />
 
 <img src="https://raw.githubusercontent.com/minhhungit/Tsig/master/wiki/demo02.png" />
