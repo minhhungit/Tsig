@@ -1,0 +1,14 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/TsigSolution/v16
+/packages
+/TsigApp/bin/Debug
+/TsigApp/obj/Debug
+/TsigSample/bin/Debug
+/TsigSample/obj/Debug
+/TsigApp/bin/Release
+/TsigSample/bin/Release
+/TsigSample/obj/Release
+/TsigApp/obj/Release
