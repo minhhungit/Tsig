@@ -1,6 +1,8 @@
 # Tsig
 Twitter Snowflake-alike Id Generator
 
+Build with :heart: NancyFx - Topshelf - AppCfg.Net - NLog - SimpleInjector
+
 ### Settings
 
 ```xml
