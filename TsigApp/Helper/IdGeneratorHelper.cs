@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Threading;
 
 namespace TsigApp.Helper
 {
@@ -19,29 +20,49 @@ namespace TsigApp.Helper
 
         #endregion
 
+        //private static long _tempId;
+
+        //public long CreateId()
+        //{
+        //    var id = _gen.CreateId();
+        //    while (true)
+        //    {
+        //        if (_tempId == 0)
+        //        {
+        //            _tempId = id;
+        //            id = _gen.CreateId();
+        //        }
+        //        else
+        //        {
+        //            if (id > _tempId)
+        //            {
+        //                _tempId = id;
+        //                return id;
+        //            }
+
+        //            id = _gen.CreateId();
+        //        }
+        //    }
+        //}
+
+
         private static long _tempId;
 
         public long CreateId()
-        {
-            var id = _gen.CreateId();
-            while (true)
+        {            
+            long oldValue, newValue;
+            do
             {
                 if (_tempId == 0)
                 {
-                    _tempId = id;
-                    id = _gen.CreateId();
+                    _tempId = _gen.CreateId();
                 }
-                else
-                {
-                    if (id > _tempId)
-                    {
-                        _tempId = id;
-                        return id;
-                    }
 
-                    id = _gen.CreateId();
-                }
-            }
+                oldValue = _tempId;
+                newValue = _gen.CreateId();
+            } while (Interlocked.CompareExchange(ref _tempId, newValue, oldValue) != oldValue);
+
+            return newValue;
         }
     }
 }
