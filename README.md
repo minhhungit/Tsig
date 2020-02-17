@@ -25,7 +25,10 @@ Build with :heart: NancyFx - Topshelf - AppCfg.Net - NLog - SimpleInjector and [
 ### Run
 - Build and run TsigApp.exe 
 - Or host it as windows service by [topshelf](http://docs.topshelf-project.com/en/latest/overview/commandline.html) command: 
-  >TsigApp install --autostart
+  > TsigApp install --autostart
+
+  > TsigApp start
+  
 - Send request to http://localhost:8111/tsig/gen/id with ApiKey
 - Receive Id 
 
