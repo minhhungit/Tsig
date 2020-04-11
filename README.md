@@ -1,7 +1,7 @@
 # Tsig
 <Twitter Snowflake-alike Id Generator/> Demo Application
 
-Build with :heart: NancyFx - Topshelf - AppCfg.Net - NLog - SimpleInjector and [RobThree/IdGen](https://github.com/RobThree/IdGen)
+Build with :heart: NancyFx - Topshelf - AppCfg.Net - NLog - SimpleInjector and [IdGen](https://github.com/RobThree/IdGen)
 
 ### Settings
 
